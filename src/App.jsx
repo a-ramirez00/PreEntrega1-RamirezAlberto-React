@@ -10,7 +10,7 @@ function App() {
       {/* Componente NavBar, donde figura la barra de navegacion */}
       <NavBar/>
       {/* Componente ItemListContainer, donde mandamos un mensaje a traves de las props */}
-      <ItemListContainer saludo = {'Hola Mundo!!'}/>
+      <ItemListContainer productos={'Nuestros Productos'} />
     </div>
 
   )
