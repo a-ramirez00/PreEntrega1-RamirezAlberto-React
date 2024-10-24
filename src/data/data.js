@@ -2,7 +2,7 @@ const products = [
     {
         id: 'Tb001',
         name: 'Galaxy Tab S7',
-        image: './img/Tab-S7.jpeg',
+        image: '/img/Tab-S7.jpeg',
         description: 'Tableta de 11 pulgadas con pantalla de 120Hz y S Pen.',
         price: 649,
         category: 'tablets',
@@ -11,7 +11,7 @@ const products = [
     {
         id: 'Tb002',
         name: 'Galaxy Tab A8',
-        image: './img/Tab-A8.jpeg',
+        image: '/img/Tab-A8.jpeg',
         description: 'Tableta de 10.5 pulgadas económica con gran rendimiento.',
         price: 229,
         category: 'tablets',
@@ -20,7 +20,7 @@ const products = [
     {
         id: 'Tb003',
         name: 'Galaxy Tab S6 Lite',
-        image: './img/S6-Lite.jpeg',
+        image: '/img/S6-Lite.jpeg',
         description: 'Tableta de 10.4 pulgadas con S Pen incluido, ideal para tomar notas.',
         price: 349,
         category: 'tablets',
@@ -29,7 +29,7 @@ const products = [
     {
         id: 'Lp001',
         name: 'Galaxy Book Pro',
-        image: './img/Book-pro.webp',
+        image: '/img/Book-pro.webp',
         description: 'Pantalla AMOLED de 13.3 pulgadas, Intel Core i5, notebook ultrafina.',
         price: 999,
         category: 'notebooks',
@@ -38,7 +38,7 @@ const products = [
     {
         id: 'Lp002',
         name: 'Galaxy Book Go',
-        image: './img/book-Go.jpeg',
+        image: '/img/book-Go.jpeg',
         description: 'Notebook de 14 pulgadas, Qualcomm Snapdragon 7c, batería de larga duración.',
         price: 349,
         category: 'notebooks',
@@ -47,7 +47,7 @@ const products = [
     {
         id: 'Lp003',
         name: 'Galaxy Book Flex2',
-        image: './img/book-flex.webp',
+        image: '/img/book-flex.webp',
         description: 'Pantalla QLED de 13.3 pulgadas, notebook convertible 2 en 1 con S Pen.',
         price: 1399,
         category: 'notebooks',

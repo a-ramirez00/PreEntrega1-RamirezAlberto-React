@@ -1,7 +1,8 @@
 header {
     background-color: #e6eef7;
 }
-.navBar{
+
+.navBar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,7 +10,7 @@ header {
     height: 5.625rem;
 }
 
-.navBar ul{
+.navBar ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,20 +19,27 @@ header {
     list-style: none;
     gap: 1.25rem;
 }
-.navBar ul li{
+
+.navBar ul li {
     font-size: 1.1rem;
-    color: #1A202C;
     padding: .3125rem;
     border-radius: .25rem;
 }
-.navBar ul:first-child li img{
+.navBar .category{
+    text-decoration: none;
+    color: #1A202C;
+}
+
+.navBar ul:first-child li img {
     width: 5rem;
     border-radius: .3125rem;
 }
-.navBar ul:first-child li:first-child:hover{
+
+.navBar ul:first-child li:first-child:hover {
     background-color: transparent;
 
 }
+
 .navBar ul:first-child li:hover {
     background-color: #b8c3cf;
 }

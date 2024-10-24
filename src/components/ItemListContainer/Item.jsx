@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 const Item = ({ product }) => {
     return (
@@ -12,6 +14,8 @@ const Item = ({ product }) => {
                 <li><span>{product.stock} unidades</span></li>
             </ul>
 
+
+            <Link  to={'/detail/' + product.id} > Ver producto </Link>
         </div>
     )
 }
