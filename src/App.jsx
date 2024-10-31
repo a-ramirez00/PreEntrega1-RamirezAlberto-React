@@ -1,6 +1,7 @@
 import './App.css'
 
 import NavBar from './components/NavBar/NavBar'
+import Fotter from './components/Footer/Fotter'
 
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/itemDetail/ItemDetailContainer'
@@ -23,8 +24,10 @@ function App() {
           <Route path='/' element={<ItemListContainer productos={'Nuestros productos'} />} ></Route>
           <Route path='/category/:idCategory' element={<ItemListContainer />} ></Route>
           <Route path='/detail/:idProduct' element={<ItemDetailContainer />}></Route>
+
         </Routes>
 
+        <Fotter />
 
 
         {/* Componente ItemListContainer, donde mandamos un mensaje a traves de las props */}

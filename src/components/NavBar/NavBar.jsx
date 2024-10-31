@@ -23,7 +23,7 @@ function NavBar() {
                             <Link to='/category/tablets' className='link'> Tablets </Link>
                         </li>
                         <li >
-                            <Link to='/category/notebooks'className='link' > Notebooks </Link>
+                            <Link to='/category/notebooks'className='link'> Notebooks </Link>
                         </li>
                     </ul>
                     <ul>
