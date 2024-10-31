@@ -14,16 +14,16 @@ function NavBar() {
                 <nav className='navBar'>
                     <ul>
                         <li >
-                            <Link to='/'><img src={LogoTienda} alt="" /></Link>
+                            <Link to='/' ><img src={LogoTienda} alt="" /></Link>
                         </li>
                         <li >
-                            <Link to='/category/celulares' > Celulares</Link>
+                            <Link to='/category/celulares' className='link'> Celulares</Link>
                         </li>
                         <li >
-                            <Link to='/category/tablets' > Tablets </Link>
+                            <Link to='/category/tablets' className='link'> Tablets </Link>
                         </li>
                         <li >
-                            <Link to='/category/notebooks' > Notebooks </Link>
+                            <Link to='/category/notebooks'className='link' > Notebooks </Link>
                         </li>
                     </ul>
                     <ul>

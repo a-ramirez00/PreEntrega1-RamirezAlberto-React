@@ -16,7 +16,7 @@ const ItemListContainer = ({ productos }) => {
     getProducts()
       .then((data) => {
         if (idCategory) {
-          const filterProducts = data.filter((product)=> product.category === idCategory)
+          const filterProducts = data.filter((product) => product.category === idCategory)
           setProducts(filterProducts)
         } else {
           setProducts(data)
@@ -28,16 +28,15 @@ const ItemListContainer = ({ productos }) => {
       .finally(() => {
         console.log('finalizo la promesa')
       })
+
   }, [idCategory])
 
 
   return (
     <div >
       <h1>{productos}</h1>
-      {
-        <ItemList products={products} />
+      <ItemList nombre={idCategory} products={products} />
 
-      }
     </div>
   )
 }

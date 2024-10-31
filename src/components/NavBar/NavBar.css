@@ -43,3 +43,7 @@ header {
 .navBar ul:first-child li:hover {
     background-color: #b8c3cf;
 }
+.navBar .link{
+    text-decoration: none;
+    color:#1A202C;
+}

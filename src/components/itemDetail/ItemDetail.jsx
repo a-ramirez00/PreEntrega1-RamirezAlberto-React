@@ -1,13 +1,22 @@
 import React from 'react'
+import './itemDetail.css'
+
 
 const ItemDetail = ({product}) => {
     return (
-        <div style={{ display: 'flex' }}>
-            <img src={product.image} width={500} alt="" />
-            <div>
+        <div className='item-detail' >
+            <div className='item-detail-secondary'>
+
+            </div>
+            <div className='item-detail-img'>
+
+            <img src={product.image}  alt="" />
+            </div>
+            <div className='item-detail-add'>
                 <h2> {product.name}</h2>
                 <p>{product.description}</p>
-                <p>Precio $ {product.price}</p>
+                <h2> $ <span>{product.price}</span> </h2>
+                <p>{product.stock} Unidades</p>
             </div>
         </div>
     )
