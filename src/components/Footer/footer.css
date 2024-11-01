@@ -31,3 +31,22 @@
     text-decoration: none;
     color: #1A202C;
 }
+.fotter ul li{
+    font-size: 1.1rem;
+    padding: .3125rem;
+    border-radius: .25rem;
+}
+.fotter ul:first-child li:first-child:hover {
+    background-color: transparent;
+}
+
+.fotter ul:first-child li:hover {
+    background-color: #b8c3cf;
+}
+
+.fotter ul:nth-child(2) li:first-child:hover{
+    text-decoration: none;
+}
+.fotter ul:nth-child(2) li:hover{
+    text-decoration:underline
+}
