@@ -28,7 +28,7 @@ function NavBar() {
                     </ul>
                     <ul>
                         {/* Componente CartWidget, donde mostramos un icono de carrito con un número hardcodeado al lado */}
-                        <li><CartWidget cantidadCompras={0} /></li>
+                        <li><CartWidget  /></li>
                         {/* Componente DarkkMode, el que servira para modo oscuro de la aplicaion */}
                         <li><DarkMode /></li>
                     </ul>

@@ -8,27 +8,31 @@ import ItemDetailContainer from './components/itemDetail/ItemDetailContainer'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-
+import { CartProvider } from './context/CartContext'
+import Cart from './components/Cart/Cart'
 function App() {
   return (
     <div>
 
       <BrowserRouter>
-
-        {/* Componente NavBar, donde figura la barra de navegacion */}
-        <NavBar />
+        <CartProvider>
 
 
-        <Routes>
+          {/* Componente NavBar, donde figura la barra de navegacion */}
+          <NavBar />
 
-          <Route path='/' element={<ItemListContainer productos={'Nuestros productos'} />} ></Route>
-          <Route path='/category/:idCategory' element={<ItemListContainer />} ></Route>
-          <Route path='/detail/:idProduct' element={<ItemDetailContainer />}></Route>
 
-        </Routes>
+          <Routes>
 
-        <Fotter />
+            <Route path='/' element={<ItemListContainer productos={'Nuestros productos'} />} />
+            <Route path='/category/:idCategory' element={<ItemListContainer />} />
+            <Route path='/detail/:idProduct' element={<ItemDetailContainer />} />
+            <Route path='/cart' element={<Cart />} />
+          </Routes>
 
+          <Fotter />
+
+        </CartProvider>
 
         {/* Componente ItemListContainer, donde mandamos un mensaje a traves de las props */}
 
