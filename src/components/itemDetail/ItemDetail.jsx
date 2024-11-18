@@ -47,7 +47,7 @@ const ItemDetail = ({ product }) => {
                     showItemCount === true ? (
                         <ItemCount stock={product.stock} addProduct={addProduct} />
                     ) : (
-                        <Link to='/cart'> Terminar compra</Link>
+                        <Link className='Link' to='/cart'> Ver carrito</Link>
                     )
                 }
             </div>

@@ -1,7 +1,7 @@
 import './CartWidget.css'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
-import IconCart from '../../assets/carShopping.png'
+import IconCart from '../../assets/CarShopping.png'
 import { Link } from 'react-router-dom'
 
 const CartWidget = () => {

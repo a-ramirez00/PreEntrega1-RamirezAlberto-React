@@ -1,0 +1,77 @@
+div .checkout h2 {
+    color: #009999;
+    font-size: 36px;
+    margin: 20px;
+    text-align: center;
+}
+.checkout{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+div .checkout p {
+    color: #000000;
+    /* Ajusta el color del texto */
+    font-size: 18px;
+    text-align: center;
+}
+
+div .checkout .Link {
+    background-color: #009999;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+
+
+
+/* General styles for the form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Labels for inputs */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+form button {
+    background-color: #2ca6a4;
+    /* Teal color */
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #218b89;
+}

@@ -1,0 +1,27 @@
+.count {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.875rem;
+    width: 100%;
+}
+
+.count-add {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 3.125rem;
+    width: 50%;
+}
+.count p{
+    background-color: #218b89;
+    color: white;
+    font-weight: bolder;
+    padding: .5rem;
+    border-radius: .1875rem;
+}
+.count p:hover{
+    background-color: rgb(12, 52, 52);
+}

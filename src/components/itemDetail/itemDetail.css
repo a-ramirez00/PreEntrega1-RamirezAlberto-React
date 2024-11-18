@@ -41,5 +41,15 @@
 
 .item-detail-add p {
     font-size: 1.2rem;
-    ;
+    margin-bottom: .3125rem;
+}
+
+.item-detail-add .Link{
+    text-decoration: none;
+    background-color: rgb(15, 104, 104);
+    color: white;
+    font-weight: bolder;
+    padding: .5625rem;
+    border-radius: .1875rem;
+    margin: .4375rem;
 }

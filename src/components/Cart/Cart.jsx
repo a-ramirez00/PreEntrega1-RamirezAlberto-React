@@ -2,36 +2,40 @@ import React from 'react'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { Link } from 'react-router-dom'
+import './cart.css'
 const Cart = () => {
 
     const { cart, totalPrice, deleteProductById, deleteCart } = useContext(CartContext)
 
     if (cart.length === 0) {
         return (
-            <div>
-                <h2>EL carrito esta vacio</h2>
-                <Link to='/'>Inicio </Link>
+            <div className='cart-cero'>
+                <h1>EL carrito esta vacio</h1>
+                <Link className='link' to='/'>Inicio </Link>
             </div>
         )
     }
 
     return (
-        <div>
-            <h2>productos en el carrito</h2>
+        <div className='cart'>
+            <h1>productos en el carrito</h1>
             {
                 cart.map((productCart) => (
-                    <div key={productCart.id}>
+                    <div className='map' key={productCart.id}>
                         <img src={productCart.image[0]} width={100} alt="" />
                         <p>{productCart.name}</p>
                         <p>Cantidad: {productCart.quantity}</p>
                         <p>Precio: {productCart.price * productCart.quantity}</p>
-                        <button onClick={() => deleteProductById(productCart.id)}>x</button>
+                        <span onClick={() => deleteProductById(productCart.id)}>❌</span>
                     </div>
 
                 ))
             }
-            <p> Precio total:{totalPrice()}</p>
-            <button onClick={deleteCart}> borrar carrito</button>
+            <h2> Precio total:{totalPrice()}</h2>
+            <div className='finish'>
+            <span onClick={deleteCart}> borrar carrito</span>
+            <Link className='Link' to={'/checkout'}>Terminar mi compra</Link>
+            </div>
         </div>
     )
 }
